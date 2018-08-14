@@ -14,6 +14,8 @@ import org.osmdroid.tileprovider.MapTileRequestState;
 import org.osmdroid.tileprovider.tilesource.ITileSource;
 
 import android.graphics.drawable.Drawable;
+import android.net.TrafficStats;
+import android.os.Build;
 import android.util.Log;
 import org.osmdroid.api.IMapView;
 import org.osmdroid.util.MapTileIndex;
@@ -201,7 +203,9 @@ public abstract class MapTileModuleProviderBase {
 		}
 
 		protected void onTileLoaderInit() {
-			// Do nothing by default
+			if (Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+				TrafficStats.setThreadStatsTag(1);
+			}
 		}
 
 		protected void onTileLoaderShutdown() {

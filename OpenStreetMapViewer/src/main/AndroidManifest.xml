@@ -6,8 +6,8 @@
     android:versionName="5.3-SNAPSHOT">
 
     <uses-sdk tools:overrideLibrary="mil.army.missioncommand,armyc2.c2sd.singlepointrenderer,org.osmdroid.gpkg,mil.nga.geopackage,org.osmdroid.mapsforge,android.support.v13,com.github.angads25.filepicker,android.support.v7.gridlayout"
-              android:minSdkVersion="8"
-              android:targetSdkVersion="23"/>
+              android:minSdkVersion="14"
+              android:targetSdkVersion="27"/>
 
     <supports-screens
         android:anyDensity="true"

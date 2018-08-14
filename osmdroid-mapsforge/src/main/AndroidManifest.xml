@@ -2,7 +2,7 @@
     package="org.osmdroid.mapsforge">
 
     <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="23" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="27" />
 
 </manifest>
